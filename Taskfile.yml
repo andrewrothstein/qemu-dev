@@ -19,7 +19,7 @@ tasks:
     cmds:
       - curl -sSLf -o {{ .fq_iso | quote }} {{ .url | quote }}
     status:
-      - test -f {{ .fq_url | quote }}
+      - test -f {{ .fq_iso | quote }}
   create-data-disk:
     vars:
       s: '8G'
